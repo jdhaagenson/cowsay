@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cowsay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <style>
+        .box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 5px;
+            width: 30ch;
+            height: auto;
+            border: 10px palevioletred;
+            align-items: stretch;
+        }
+        button, a {
+            font-family: 'Chelsea Market', cursive;
+        }
+        label {
+            font-family: 'Chelsea Market', cursive;
+        }
+        #id_phrase {
+            font-family: monospace;
+            color: palevioletred;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <button type="reset" onclick="location.reload()">Reset</button>
+        <a href="/history"><button type="button">History</button></a>
+    </div>
+    <div class="box">
+        {% if output %}
+            <pre>{{ output }}</pre>
+        {% endif %}
+    </div>
+    <form action="" method="POST" class="box">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+
+</html>
