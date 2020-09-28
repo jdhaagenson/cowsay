@@ -1,3 +1,4 @@
+.idea/*
 .idea/.gitignore
 .idea/__cowsay__.iml
 .idea/dataSources.xml
