@@ -11,7 +11,7 @@ tests = ["pytest", "pytest-asyncio"]
 
 [[package]]
 name = "django"
-version = "3.1.8"
+version = "3.1.12"
 description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
 category = "main"
 optional = false
@@ -53,8 +53,8 @@ asgiref = [
     {file = "asgiref-3.2.10.tar.gz", hash = "sha256:7e51911ee147dd685c3c8b805c0ad0cb58d360987b56953878f8c06d2d1c6f1a"},
 ]
 django = [
-    {file = "Django-3.1.8-py3-none-any.whl", hash = "sha256:c348b3ddc452bf4b62361f0752f71a339140c777ebea3cdaaaa8fdb7f417a862"},
-    {file = "Django-3.1.8.tar.gz", hash = "sha256:f8393103e15ec2d2d313ccbb95a3f1da092f9f58d74ac1c61ca2ac0436ae1eac"},
+    {file = "Django-3.1.12-py3-none-any.whl", hash = "sha256:a523d62b7ab2908f551dabc32b99017a86aa7784e32b761708e52be3dce6d35d"},
+    {file = "Django-3.1.12.tar.gz", hash = "sha256:dc41bf07357f1f4810c1c555b685cb51f780b41e37892d6cc92b89789f2847e1"},
 ]
 pytz = [
     {file = "pytz-2020.1-py2.py3-none-any.whl", hash = "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed"},
